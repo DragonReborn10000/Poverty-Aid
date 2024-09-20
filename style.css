@@ -1,0 +1,395 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+  /* Add a background color or image */
+  background-color: white;
+  background-image: url('');
+
+  /* Customize the font, size, and color for text*/
+  font-family: 'Times New Roman', Times, serif;
+  ;
+  font-size: 20px;
+  color: black;
+
+  /* Adjust the padding and margins */
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  color: red;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  background-color: darkblue;
+  color: white;
+}
+
+p {
+  line-height: 1.6;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+  list-style: decimal;
+}
+
+ol li {
+  color: purple;
+}
+
+/*Navigation Bar*/
+ul {
+  list-style: disc;
+  color: white;
+  background-color: darkblue;
+}
+
+ul li {
+  font-style: italic;
+}
+
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+/*FIX*/
+#button {
+  background-color: darkblue;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+#theme-button {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: blue;
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+
+
+a {
+  text-decoration: snow;
+  color: darkblue;
+}
+
+a:link {
+  text-transform: none;
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-container button {
+  background-color: darkblue;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-item:nth-of-type(1) {
+  width: 35%;
+}
+
+.header-item:nth-of-type(2) {
+  width: 65%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  background-color: white;
+  color: red;
+}
+
+.footer a:hover {
+  font-weight: bold;
+  background-color: white;
+  color: red;
+}
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+  font-size: 70px;
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+  font-size: 70px;
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+  font-size: 70px;
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+#sign-now-button {
+  padding: 10px 20px;
+  margin-left: 50px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sign-now-button:hover {
+  background-color: #0077cc;
+}
+
+/* Animation styles for revealable elements */
+
+.revealable {
+  position: relative;
+  opacity: 0;
+  transform: translate(150px);
+  transition: all 2s ease;
+}
+
+.revealable.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* navbar position */
+.navbar {
+  position: fixed;
+  z-index: 8;
+}
+
+/* Add Reduce Motion button to header */
+#reduce-motion-button {
+  background-color: white;
+  color: blue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Box that contains all the content and images */
+.modal-content {
+  background-color: beige;
+  /* Update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  /* Adds flexbox to center all items */
+  justify-content: space-around;
+  align-items: center;
+}
+
+#thanks-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+  /* Sets a default width for the text container */
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  /* Center the content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content-img {
+  max-width: 50%;
+  height: auto;
+}
+
+#modal-text-container {
+  display: flex;
+  /* Adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-button {
+  background-color: forestgreen;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
